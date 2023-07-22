@@ -42,7 +42,7 @@ const App = () => {
         }
       },
     });
-  }, []);
+  }, [alanBtnRef]);
 
   return (
     <div>
