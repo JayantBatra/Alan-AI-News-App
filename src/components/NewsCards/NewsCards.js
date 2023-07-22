@@ -38,7 +38,7 @@ const NewsCards = ({ articles, activeArticle }) => {
           alignItems="stretch"
           spacing={3}
         >
-          {infoCards.map((infoCard) => (
+          {infoCards.map((infoCard, index) => (
             <Grid
               item
               xs={12}
@@ -46,6 +46,7 @@ const NewsCards = ({ articles, activeArticle }) => {
               md={4}
               lg={3}
               className={classes.infoCard}
+              key={index}
             >
               <div
                 className={classes.card}
@@ -76,7 +77,7 @@ const NewsCards = ({ articles, activeArticle }) => {
       <Grid
         className={classes.container}
         container
-        alignItems="strech"
+        alignItems="stretch"
         spacing={3}
       >
         {articles.map((article, i) => (
